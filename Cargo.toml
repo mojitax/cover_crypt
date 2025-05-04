@@ -38,7 +38,7 @@ name = "runme"
 required-features = ["test-utils"]
 
 [features]
-default = ["mlkem-512", "curve25519"]
+default = ["mlkem-512", "curve25519", "test-utils"]
 mlkem-512 = []
 mlkem-768 = []
 p-256 = ["elliptic-curve", "p256", "subtle"]
@@ -59,9 +59,11 @@ serde_json = { version = "1.0", features = ["preserve_order"] }
 subtle = { version = "2.6.1", optional = true }
 tiny-keccak = { version = "2.0.2", features = ["kmac", "sha3"] }
 zeroize = "1.6.0"
+rand = "0.8"
 
 [dev-dependencies]
 base64 = { version = "0.21.0" }
 criterion = { version = "0.5", features = [
   "html_reports",
 ], default-features = false }
+
