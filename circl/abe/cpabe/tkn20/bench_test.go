@@ -4,8 +4,10 @@ import (
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/x509"
+	"encoding/csv"
 	"fmt"
 	"math"
+	"os"
 	"strconv"
 	"strings"
 	"testing"
@@ -339,4 +341,122 @@ func rsaEncrypt(data []byte, pubKey *rsa.PublicKey) ([]byte, error) {
 		ct = append(ct, encryptedChunk...)
 	}
 	return ct, nil
+}
+
+// go test -benchmem -bench ^BenchmarkTKN20EndToEnd$ github.com/cloudflare/circl/abe/cpabe/tkn20
+func BenchmarkTKN20EndToEnd(b *testing.B) {
+	attributeCounts := []int{2, 3, 4, 5, 10, 20}
+
+	csvFile, err := os.Create("tkn20_results.csv")
+	if err != nil {
+		b.Fatalf("cannot create CSV file: %v", err)
+	}
+	defer csvFile.Close()
+
+	writer := csv.NewWriter(csvFile)
+	defer writer.Flush()
+
+	writer.Write([]string{
+		"mode", "structure_n", "policy_len", "keygen_time_us",
+		"avg_encrypt_time_us", "avg_decrypt_time_us",
+		"usk_length_bytes", "avg_ciphertext_length_bytes",
+		"access_structure_size_bytes", "ciphertext overhead 32B", "ciphertext overhead 10kB", "policy",
+	})
+
+	for _, maxAttrCount := range attributeCounts {
+		for attrCount := 2; attrCount <= maxAttrCount; attrCount++ {
+			b.Run(fmt.Sprintf("%d_attributes", attrCount), func(b *testing.B) {
+				attrsMap := make(map[string]string)
+				policyParts := make([]string, 0, attrCount)
+
+				for i := 0; i < attrCount; i++ {
+					key := fmt.Sprintf("k%d", i)
+					val := fmt.Sprintf("v%d", i)
+					attrsMap[key] = val
+					policyParts = append(policyParts, fmt.Sprintf("%s:%s", key, val))
+				}
+
+				policyStr := strings.Join(policyParts, " and ")
+
+				fmt.Printf("\n\n=== Benchmark for %d attributes ===\n", attrCount)
+				fmt.Printf("Policy: %s\n", policyStr)
+				fmt.Printf("Attributes: %v\n", attrsMap)
+
+				attrs := Attributes{}
+				attrs.FromMap(attrsMap)
+				policy := Policy{}
+				if err := policy.FromString(policyStr); err != nil {
+					b.Fatalf("invalid policy: %v", err)
+				}
+
+				pk, msk, err := Setup(rand.Reader)
+				if err != nil {
+					b.Fatalf("setup error: %v", err)
+				}
+				start := time.Now()
+				userKey, err := msk.KeyGen(rand.Reader, attrs)
+				if err != nil {
+					b.Fatalf("keygen error: %v", err)
+				}
+				keygenTimeUs := float64(time.Since(start).Microseconds())
+
+				// Encrypt/Decrypt
+				var encryptTotalUs, decryptTotalUs int64
+				var ct []byte
+				for i := 0; i < b.N; i++ {
+					start = time.Now()
+					ct, err = pk.Encrypt(rand.Reader, policy, msg)
+					if err != nil {
+						b.Fatalf("encryption error: %v", err)
+					}
+					encryptTotalUs += time.Since(start).Microseconds()
+
+					start = time.Now()
+					decMsg, err := userKey.Decrypt(ct)
+					if err != nil {
+						b.Fatalf("decryption error: %v", err)
+					}
+					decryptTotalUs += time.Since(start).Microseconds()
+
+					if string(decMsg) != string(msg) {
+						b.Fatalf("decryption mismatch: got %s, want %s", decMsg, msg)
+					}
+				}
+
+				// Encrypt long message
+				longCt, err := pk.Encrypt(rand.Reader, policy, longMsg)
+				if err != nil {
+					b.Fatal(err)
+				}
+
+				skBin, _ := userKey.MarshalBinary()
+				pkBin, _ := pk.MarshalBinary()
+
+				policySize := len(policyStr)
+				avgEncrypt := float64(encryptTotalUs) / float64(b.N)
+				avgDecrypt := float64(decryptTotalUs) / float64(b.N)
+
+				b.ReportMetric(float64(len(pkBin)), "public_key_size_bytes")
+				b.ReportMetric(float64(len(skBin)), "secret_key_size_bytes")
+				b.ReportMetric(float64(len(ct)-len(msg)), "ciphertext_overhead_32b_msg_bytes")
+				b.ReportMetric(float64(len(longCt)-len(longMsg)), "ciphertext_overhead_10kb_msg_bytes")
+
+				// Zapisz dane do CSV
+				writer.Write([]string{
+					"ABE - BLS-12-381 Pairing",                  // mode
+					fmt.Sprintf("%d", attrCount),                // structure_n
+					fmt.Sprintf("%d", attrCount),                // policy_len
+					fmt.Sprintf("%.2f", keygenTimeUs),           // keygen_time_us
+					fmt.Sprintf("%.2f", avgEncrypt),             // encrypt_time
+					fmt.Sprintf("%.2f", avgDecrypt),             // decrypt_time
+					fmt.Sprintf("%d", len(skBin)),               // user secret key length
+					fmt.Sprintf("%d", len(ct)),                  // ciphertext length
+					fmt.Sprintf("%d", policySize),               // policy size
+					fmt.Sprintf("%d", len(ct)-len(msg)),         // ciphertext overhead
+					fmt.Sprintf("%d", len(longCt)-len(longMsg)), // long ciphertext overhead
+					policyStr, // policy
+				})
+			})
+		}
+	}
 }

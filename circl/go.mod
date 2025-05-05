@@ -9,9 +9,7 @@ require (
 	github.com/bwesterb/go-ristretto v1.2.3
 	github.com/lovoo/goka v1.1.11
 	golang.org/x/crypto v0.26.0
-	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 	golang.org/x/sys v0.24.0
-	gonum.org/v1/gonum v0.15.1
 )
 
 require (
