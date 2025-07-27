@@ -1,5 +1,5 @@
 use std::{fs::File, io::Write, time::Instant, collections::HashSet, collections::HashMap};
-
+use std::mem::size_of_val;
 use cosmian_cover_crypt::{
     api::Covercrypt,
     cc_keygen,
@@ -125,7 +125,8 @@ fn run_benchmark(
             .expect("Encryption failed");
         total_encrypt_time += start_encrypt.elapsed().as_nanos();
         total_ciphertext_len += ct.1.len();
-
+        println!("  Ciphertext length: {:?}", ct.0.length());
+        println!("  Ciphertext: {}", ct.1.len());
         let start_decrypt = Instant::now();
         let decrypted = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::decrypt(cc, &usk, &ct)
             .expect("Decryption failed");
@@ -174,7 +175,7 @@ fn main() {
 
         println!("Running benchmarks for mode: {}", hint_str);
 
-        for n in 2..=5 {
+        for n in 2..=6 {
             println!("Structure size: {} x {}", n, n);
             let available_attrs = generate_fixed_attributes(n, n);
             print_available_attrs(&available_attrs);
@@ -182,13 +183,13 @@ fn main() {
 
             
             let (mut msk, mut mpk) = cc_keygen(&cc, false).unwrap();
-            let keygen_time = start_keygen.elapsed().as_micros() as f64;
 
             msk.access_structure = AccessStructure::new();
             populate_access_structure(&mut msk.access_structure, hint.clone(), &available_attrs)
                 .expect("Populating access structure failed");
             let start_keygen = Instant::now();
             mpk = cc.update_msk(&mut msk).expect("Updating MPK failed");
+            println!("  mpk length: {}", mpk.length());
             let keygen_time = start_keygen.elapsed().as_micros() as f64;
             for policy_len in 2..=n {
                 println!("  Policy length: {}", policy_len);
@@ -213,11 +214,12 @@ fn main() {
 
                 writeln!(
                     file,
-                    "{},{},{},{:.2},{:.2},{:.2},{:.2},{},{},{},\"{}\"",
+                    "{},{},{},{:.2},{},{:.2},{:.2},{:.2},{},{},{},\"{}\"",
                     hint_str,
                     n,
                     policy_len,
                     keygen_time,
+                    mpk.length(),
                     usk_time,
                     avg_encrypt_time,
                     avg_decrypt_time,
