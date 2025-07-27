@@ -163,7 +163,7 @@ fn main() {
     let mut file = File::create("benchmark_modes_comparison.csv").expect("Cannot create file");
     writeln!(
         file,
-        "mode,structure_n,policy_len,keygen_time_us,usk_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,policy"
+        "mode,structure_n,policy_len,keygen_time_us,master_key_length,usk_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,policy"
     )
     .unwrap();
 

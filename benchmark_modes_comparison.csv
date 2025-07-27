@@ -1,4 +1,4 @@
-mode,structure_n,policy_len,keygen_time_us,usk_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,policy
+mode,structure_n,policy_len,keygen_time_us,master_key_length,usk_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,policy
 Classic,2,2,60197.00,426,221.00,20594.44,40507.76,307,50,42,"REG::INT && LVL::INT"
 Classic,3,2,423727.00,2466,309.00,20237.78,59683.86,751,50,80,"SEC::TOP && REG::LOW"
 Classic,3,3,423727.00,2466,235.00,20008.32,52952.82,455,50,80,"SEC::TOP && TYP::HR && REG::HR"
