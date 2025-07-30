@@ -1,7 +1,6 @@
 mode,policy_len,keygen_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,ciphertext overhead 32B,ciphertext overhead 10kB,policy
-ABE - BLS-12-381 Pairing,2,28188.00,19596.50,6174.00,2778,2714,15,2691,2691,k0:v0 and k1:v1
-ABE - BLS-12-381 Pairing,3,36284.00,22849.50,6396.00,3209,3062,25,3039,3039,k0:v0 and k1:v1 and k2:v2
-ABE - BLS-12-381 Pairing,4,41972.00,26210.50,6476.50,3640,3410,35,3387,3387,k0:v0 and k1:v1 and k2:v2 and k3:v3
-ABE - BLS-12-381 Pairing,5,51015.00,30156.50,6727.00,4071,3758,45,3735,3735,k0:v0 and k1:v1 and k2:v2 and k3:v3 and k4:v4
-ABE - BLS-12-381 Pairing,10,85094.00,48010.50,7792.00,6226,5498,95,5475,5475,k0:v0 and k1:v1 and k2:v2 and k3:v3 and k4:v4 and k5:v5 and k6:v6 and k7:v7 and k8:v8 and k9:v9
-ABE - BLS-12-381 Pairing,20,157344.00,84626.00,10126.50,10556,8998,215,8975,8975,k0:v0 and k1:v1 and k2:v2 and k3:v3 and k4:v4 and k5:v5 and k6:v6 and k7:v7 and k8:v8 and k9:v9 and k10:v10 and k11:v11 and k12:v12 and k13:v13 and k14:v14 and k15:v15 and k16:v16 and k17:v17 and k18:v18 and k19:v19
+ABE - BLS-12-381 Pairing,2,30300.00,19735.00,6226.50,2778,2714,15,2691,2691,k0:v0 and k1:v1
+ABE - BLS-12-381 Pairing,3,34833.00,22317.25,6186.25,3209,3062,25,3039,3039,k0:v0 and k1:v1 and k2:v2
+ABE - BLS-12-381 Pairing,4,42428.00,25815.50,6380.00,3640,3410,35,3387,3387,k0:v0 and k1:v1 and k2:v2 and k3:v3
+ABE - BLS-12-381 Pairing,5,48660.00,29123.75,6573.50,4071,3758,45,3735,3735,k0:v0 and k1:v1 and k2:v2 and k3:v3 and k4:v4
+ABE - BLS-12-381 Pairing,6,55302.00,33055.75,6776.25,4502,4106,55,4083,4083,k0:v0 and k1:v1 and k2:v2 and k3:v3 and k4:v4 and k5:v5

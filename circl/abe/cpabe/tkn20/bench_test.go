@@ -345,7 +345,7 @@ func rsaEncrypt(data []byte, pubKey *rsa.PublicKey) ([]byte, error) {
 
 // go test -benchmem -bench ^BenchmarkTKN20EndToEnd$ github.com/cloudflare/circl/abe/cpabe/tkn20
 func BenchmarkTKN20EndToEnd(b *testing.B) {
-	attributeCounts := []int{2, 3, 4, 5, 10, 20}
+	attributeCounts := []int{2, 3, 4, 5, 6}
 
 	csvFile, err := os.Create("tkn20_results.csv")
 	if err != nil {
@@ -391,8 +391,12 @@ func BenchmarkTKN20EndToEnd(b *testing.B) {
 		if err := policy.FromString(policyStr); err != nil {
 			b.Fatalf("invalid policy: %v", err)
 		}
-
+		mkstart := time.Now()
 		pk, msk, err := Setup(rand.Reader)
+		mkkeygenTimeUs := float64(time.Since(mkstart).Microseconds())
+		fmt.Printf("MKGTime: %f\n", mkkeygenTimeUs)
+		pklenn, _ := pk.MarshalBinary()
+		fmt.Printf("PK len: %d\n", len(pklenn))
 		if err != nil {
 			b.Fatalf("setup error: %v", err)
 		}
