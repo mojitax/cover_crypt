@@ -107,7 +107,10 @@ fn run_benchmark(
     available_attrs: &[String],
     encryption_hint: &str,
 ) -> (f64, f64, f64, usize, usize, usize, String) {
-    let policy_str =  generate_unique_policy(available_attrs, policy_len);
+    let mut policy_str = generate_unique_policy(available_attrs, policy_len);
+    for i in 0..policy_len-1 {
+        policy_str = format!("({}) || ({})", policy_str, generate_unique_policy(available_attrs, policy_len));
+    }
     println!("  Selected policy: {}", policy_str);
     let ap = AccessPolicy::parse(&policy_str).unwrap();
 
@@ -175,7 +178,7 @@ fn main() {
 
         println!("Running benchmarks for mode: {}", hint_str);
 
-        for n in 2..=6 {
+        for n in 2..=5 {
             println!("Structure size: {} x {}", n, n);
             let available_attrs = generate_fixed_attributes(n, n);
             print_available_attrs(&available_attrs);

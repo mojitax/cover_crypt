@@ -1,0 +1,4 @@
+📦 Dostępne atrybuty (9):
+["REG::TOP", "REG::MID", "REG::LOW", "TYP::TOP", "TYP::MID", "TYP::LOW", "LVL::TOP", "LVL::MID", "LVL::LOW"]
+
+🔐 Polityka dostępu: REG::  && REG::TOP
