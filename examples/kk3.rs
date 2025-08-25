@@ -141,6 +141,7 @@ fn main() {
     for (label, attr_set) in cases {
         let u_policy = AccessPolicy::parse(&attr_set.join(" && ")).unwrap();
         let usk = cc.generate_user_secret_key(&mut msk, &u_policy).unwrap();
+        println!("🔑 Wygenerowano klucze:\n  MPK: {:?}\n  MSK: {:?}", mpk, msk);
         println!("\n🔍 {}", label);
         println!("   🔸 Atrybuty: {:?}", attr_set);
 

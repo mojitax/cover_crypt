@@ -109,7 +109,7 @@ fn main() {
     let user_policy_str = test_attr_set.join(" && ");
     let user_policy = AccessPolicy::parse(&user_policy_str).unwrap();
     let usk = cc.generate_user_secret_key(&mut msk, &user_policy).unwrap();
-
+    println!("🔐 Klucze użytkownika: {:?}", usk);
     // 🔐 Szyfrowanie
     let ciphertext = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::encrypt(
         &cc,

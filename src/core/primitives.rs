@@ -2,7 +2,7 @@ use std::{
     collections::{HashMap, HashSet, LinkedList},
     mem::take,
 };
-
+ use std::time::Instant;
 use cosmian_crypto_core::{
     bytes_ser_de::Serializable,
     reexport::rand_core::{CryptoRngCore, RngCore},
@@ -170,12 +170,23 @@ pub fn usk_keygen(
     coordinates: HashSet<Right>,
 ) -> Result<UserSecretKey, Error> {
     // Extract keys first to avoid unnecessary computation in case those cannot be found.
-    let coordinate_keys = msk
+        let start_usk = Instant::now();
+
+        let coordinate_keys = msk
         .get_latest_right_sk(coordinates.into_iter())
         .collect::<Result<RevisionVec<_, _>, Error>>()?;
-    let id = msk.tsk.generate_user_id(rng)?;
-    let signature = sign(msk, &id, &coordinate_keys)?;
 
+        let usk_time = start_usk.elapsed().as_micros() as f64;
+        println!("🔑 Czas generowania po coordinate: {:.2} µs", usk_time);
+
+        let id = msk.tsk.generate_user_id(rng)?;
+
+        let usk_time2 = start_usk.elapsed().as_micros() as f64;
+        println!("🔑 Czas generowania po generate id: {:.2} µs", usk_time2);
+        let signature = sign(msk, &id, &coordinate_keys)?;
+        
+        let usk_time3 = start_usk.elapsed().as_micros() as f64;
+        println!("🔑 Czas generowania po sign: {:.2} µs", usk_time3);
     Ok(UserSecretKey {
         id,
         ps: msk.tsk.tracers.iter().map(|(_, Pi)| Pi).cloned().collect(),

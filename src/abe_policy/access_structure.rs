@@ -1,5 +1,5 @@
 use std::collections::{hash_map::Entry, HashMap, HashSet};
-
+ use std::time::Instant;
 use crate::{
     abe_policy::{
         AccessPolicy, Attribute, AttributeStatus, Dimension, EncryptionHint, QualifiedAttribute,
@@ -28,6 +28,11 @@ impl AccessStructure {
 
     /// Generate the set of USK rights described by the given access policy.
     pub fn ap_to_usk_rights(&self, ap: &AccessPolicy) -> Result<HashSet<Right>, Error> {
+        let start_usk = Instant::now();
+   
+        self.generate_complementary_rights(ap);
+        let usk_time = start_usk.elapsed().as_micros() as f64;
+        println!("🔑 Czas generowania rights: {:.2} µs", usk_time);
         self.generate_complementary_rights(ap)
     }
 

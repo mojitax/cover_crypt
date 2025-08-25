@@ -18,7 +18,7 @@ use cosmian_crypto_core::{
 };
 
 fn generate_fixed_attributes(attrs1_count: usize, attrs2_count: usize) -> Vec<String> {
-    let all_attrs1 = vec!["REG", "TYP", "LVL", "SEC", "DPT", "CONT"];
+    let all_attrs1 = vec!["REG", "TYP", "LVL", "SEC", "DPT"];
     let all_attrs2 = vec!["TOP", "MID", "LOW", "INT", "EXT", "FIN", "HR"];
 
     let mut rng = thread_rng();
@@ -108,7 +108,6 @@ fn run_benchmark(
     encryption_hint: &str,
 ) -> (f64, f64, f64, usize, usize, usize, String) {
     let mut policy_str = generate_unique_policy(available_attrs, policy_len);
-
     println!("  Selected policy: {}", policy_str);
     let ap = AccessPolicy::parse(&policy_str).unwrap();
 
@@ -126,8 +125,6 @@ fn run_benchmark(
             .expect("Encryption failed");
         total_encrypt_time += start_encrypt.elapsed().as_nanos();
         total_ciphertext_len += ct.1.len();
-        println!("  Ciphertext length: {:?}", ct.0.length());
-        println!("  Ciphertext: {}", ct.1.len());
         let start_decrypt = Instant::now();
         let decrypted = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::decrypt(cc, &usk, &ct)
             .expect("Decryption failed");
@@ -161,7 +158,7 @@ fn main() {
     let repetitions = 3;
     let plaintext = b"Benchmark test message";
 
-    let mut file = File::create("benchmark_modes_comparison3.csv").expect("Cannot create file");
+    let mut file = File::create("benchmark_modes_comparison2.csv").expect("Cannot create file");
     writeln!(
         file,
         "mode,structure_n,policy_len,keygen_time_us,master_key_length,usk_time_us,avg_encrypt_time_us,avg_decrypt_time_us,usk_length_bytes,avg_ciphertext_length_bytes,access_structure_size_bytes,policy"
@@ -176,10 +173,10 @@ fn main() {
 
         println!("Running benchmarks for mode: {}", hint_str);
 
-        for n in 1..=4 {
+        for n in 2..=5 {
             println!("Structure size: {} x {}", n, n);
             let available_attrs = generate_fixed_attributes(n, n);
-            print_available_attrs(&available_attrs);
+     
             let cc = Covercrypt::default();
 
             
@@ -192,7 +189,7 @@ fn main() {
             mpk = cc.update_msk(&mut msk).expect("Updating MPK failed");
             println!("  mpk length: {}", mpk.length());
             let keygen_time = start_keygen.elapsed().as_micros() as f64;
-            for policy_len in 1..=n {
+            for policy_len in 2..=n {
                 println!("  Policy length: {}", policy_len);
                 let (
                     avg_encrypt_time,
