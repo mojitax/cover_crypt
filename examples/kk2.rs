@@ -176,7 +176,7 @@ fn main() {
 
         println!("Running benchmarks for mode: {}", hint_str);
 
-        for n in 1..=4 {
+        for n in 1..=6 {
             println!("Structure size: {} x {}", n, n);
             let available_attrs = generate_fixed_attributes(n, n);
             print_available_attrs(&available_attrs);
