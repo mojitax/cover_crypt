@@ -15,12 +15,15 @@ use cosmian_crypto_core::{
 #[allow(dead_code)]
 /// Generates a new USK and encrypted header and prints them.
 fn generate_new(cc: &Covercrypt, msk: &mut MasterSecretKey, mpk: &MasterPublicKey) {
-    let ap = AccessPolicy::parse("DPT::FIN && SEC::TOP").unwrap();
+    let ap = AccessPolicy::parse("DPT::FIN || SEC::TOP").unwrap();
 
     let usk = cc.generate_user_secret_key(msk, &ap).unwrap();
-    let ctx = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::encrypt(cc, mpk, &ap, b"gotcha")
+    let ctx = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::encrypt(cc, mpk, &ap, b"gotchaax")
         .expect("cannot encrypt!");
-
+    println!("   🔸 Szyfrogram: {:?}", &ctx.0);
+    println!("   🔸 Szyfrogram2: {:?}", &ctx.1);
+    println!("   🔸 Szyfrogram: {:?}", &ctx.0.length());
+    println!("   🔸 Szyfrogram2: {:?}", &ctx.1.len());
     // Ensure decryption is OK
     PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::decrypt(cc, &usk, &ctx).unwrap();
 
@@ -75,7 +78,7 @@ fn main() {
 
     // Un-comment this line to generate new usk.txt and ctx.txt files.
     //
-    // generate_new(&cc, &mut _msk, &mpk);
+    generate_new(&cc, &mut _msk, &mpk);
 
     let ptx = "testing encryption/decryption".as_bytes();
 

@@ -2,7 +2,8 @@ use std::{
     collections::{HashMap, HashSet, LinkedList},
     mem::take,
 };
- use std::time::Instant;
+
+ use std::time::{Duration, Instant};
 use cosmian_crypto_core::{
     bytes_ser_de::Serializable,
     reexport::rand_core::{CryptoRngCore, RngCore},
@@ -361,6 +362,10 @@ fn h_decaps(
         <kem::MlKem as Kem>::Encapsulation,
         [u8; SHARED_SECRET_LENGTH],
     )],
+    // --- POCZĄTEK MODYFIKACJI (1/3): Dodane argumenty ---
+    checks_performed: &mut u64,
+    total_check_duration: &mut Duration,
+    // --- KONIEC MODYFIKACJI (1/3) ---
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
     let T = {
         let mut hasher = Sha3::v256();
@@ -376,7 +381,6 @@ fn h_decaps(
         hasher.finalize(&mut *T);
         T
     };
-
     let U = {
         let mut U = Secret::<SHARED_SECRET_LENGTH>::new();
         let mut hasher = Sha3::v256();
@@ -386,32 +390,67 @@ fn h_decaps(
         U
     };
 
-    // Shuffle encapsulation to counter timing attacks attempting to determine
-    // which right was used to open an encapsulation.
+    // --- POCZĄTEK MODYFIKACJI (2/3): Obliczenie i raportowanie statystyk ---
+    
+    // 1. Liczba enkapsulacji
+    let total_encapsulations = encs.len() as u64;
+
+    // 2. Liczba kluczy (precyzyjnie: tylko kluczy Hybridized)
+    let mut total_keys = 0;
+    for revision in usk.secrets.revisions() {
+        for (_, secret) in &revision {
+            if matches!(secret, RightSecretKey::Hybridized { .. }) {
+                total_keys += 1;
+            }
+        }
+    }
+    let total_possible_checks = total_keys * total_encapsulations;
+
+    println!("[PROFILOWANIE] h_decaps start:");
+    println!("  Liczba kluczy (typu Hybridized): {}", total_keys);
+    println!("  Liczba enkapsulacji (HEncs): {}", total_encapsulations);
+    println!("  Maksymalna liczba możliwych sprawdzeń: {}", total_possible_checks);
+    
+    // --- KONIEC MODYFIKACJI (2/3) ---
+
     let mut encs = encs.iter().collect::<Vec<_>>();
     shuffle(&mut encs, rng);
 
-    // Loop order matters: this ordering is faster.
     for mut revision in usk.secrets.revisions() {
-        // Shuffle secrets to counter timing attacks attempting to determine
-        // whether successive encapsulations target the same user right.
         shuffle(&mut revision, rng);
         for (E, F) in &encs {
             for (_, secret) in &revision {
                 if let RightSecretKey::Hybridized { sk, dk } = secret {
+                    
+                    // --- POCZĄTEK MODYFIKACJI (3/3): Pomiar pojedynczego sprawdzenia ---
+                    let check_start = Instant::now(); // Start pomiaru
+                    *checks_performed += 1; // Inkrementacja licznika sprawdzeń
+                    // ---
+
                     let mut K1 = ElGamal::session_key(sk, A)?;
                     let K2 = MlKem::dec(dk, E)?;
                     let S_ij = xor_in_place(H_hash(&K1, Some(&K2), &T)?, F);
                     let (tag_ij, ss) = J_hash(&S_ij, &U);
+                    
                     if tag == &tag_ij {
-                        // Fujisaki-Okamoto
+                        // ...
                         let r = G_hash(&S_ij)?;
                         let c_ij = usk.set_traps(&r);
                         if c == c_ij {
                             K1.zeroize();
+                            
+                            // --- Zatrzymujemy stoper i raportujemy sukces ---
+                            *total_check_duration += check_start.elapsed();
+                            println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", *checks_performed);
+                            // ---
+                            
                             return Ok(Some(ss));
                         }
                     }
+                    
+                    // --- Jeśli nie było `return`, dodajemy czas do sumy ---
+                    *total_check_duration += check_start.elapsed();
+                    // --- KONIEC MODYFIKACJI (3/3) ---
                 }
             }
         }
@@ -428,6 +467,10 @@ fn c_decaps(
     c: &[<ElGamal as Nike>::PublicKey],
     tag: &[u8; TAG_LENGTH],
     encs: &Vec<[u8; SHARED_SECRET_LENGTH]>,
+    // --- POCZĄTEK MODYFIKACJI (1/3): Dodane argumenty ---
+    checks_performed: &mut u64,
+    total_check_duration: &mut Duration,
+    // --- KONIEC MODYFIKACJI (1/3) ---
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
     let T = {
         let mut hasher = Sha3::v256();
@@ -439,7 +482,6 @@ fn c_decaps(
         hasher.finalize(&mut *T);
         T
     };
-
     let U = {
         let mut U = Secret::<SHARED_SECRET_LENGTH>::new();
         let mut hasher = Sha3::v256();
@@ -449,15 +491,26 @@ fn c_decaps(
         U
     };
 
-    // Shuffle encapsulation to counter timing attacks attempting to determine
-    // which right was used to open an encapsulation.
+    // --- POCZĄTEK MODYFIKACJI (2/3): Obliczenie i raportowanie statystyk ---
+    
+    // 1. Liczba enkapsulacji
+    let total_encapsulations = encs.len() as u64;
+
+    // 2. Liczba kluczy (tutaj liczymy wszystkie, bo każdy ma `sk`)
+    let total_keys = usk.secrets.revisions().map(|rev| rev.len() as u64).sum::<u64>();
+    let total_possible_checks = total_keys * total_encapsulations;
+
+    println!("[PROFILOWANIE] c_decaps start:");
+    println!("  Liczba kluczy (Classic/Hybrid): {}", total_keys);
+    println!("  Liczba enkapsulacji (CEncs): {}", total_encapsulations);
+    println!("  Maksymalna liczba możliwych sprawdzeń: {}", total_possible_checks);
+    
+    // --- KONIEC MODYFIKACJI (2/3) ---
+
     let mut encs = encs.iter().collect::<Vec<_>>();
     shuffle(&mut encs, rng);
 
-    // Loop order matters: this ordering is faster.
     for mut revision in usk.secrets.revisions() {
-        // Shuffle secrets to counter timing attacks attempting to determine
-        // whether successive encapsulations target the same user right.
         shuffle(&mut revision, rng);
         for F in &encs {
             for (_, secret) in &revision {
@@ -465,18 +518,35 @@ fn c_decaps(
                     RightSecretKey::Hybridized { sk, .. } => sk,
                     RightSecretKey::Classic { sk } => sk,
                 };
+                
+                // --- POCZĄTEK MODYFIKACJI (3/3): Pomiar pojedynczego sprawdzenia ---
+                let check_start = Instant::now(); // Start pomiaru
+                *checks_performed += 1; // Inkrementacja licznika sprawdzeń
+                // ---
+
                 let mut K1 = ElGamal::session_key(sk, A)?;
                 let S = xor_in_place(H_hash(&K1, None, &T)?, F);
                 K1.zeroize();
                 let (tag_ij, ss) = J_hash(&S, &U);
+                
                 if tag == &tag_ij {
-                    // Fujisaki-Okamoto
+                    // ...
                     let r = G_hash(&S)?;
                     let c_ij = usk.set_traps(&r);
                     if c == c_ij {
+                        
+                        // --- Zatrzymujemy stoper i raportujemy sukces ---
+                        *total_check_duration += check_start.elapsed();
+                        println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", *checks_performed);
+                        // ---
+                        
                         return Ok(Some(ss));
                     }
                 }
+                
+                // --- Jeśli nie było `return`, dodajemy czas do sumy ---
+                *total_check_duration += check_start.elapsed();
+                // --- KONIEC MODYFIKACJI (3/3) ---
             }
         }
     }
@@ -491,6 +561,15 @@ pub fn decaps(
     usk: &UserSecretKey,
     encapsulation: &XEnc,
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
+    // --- POCZĄTEK MODYFIKACJI ---
+    
+    // Licznik wykonanych sprawdzeń (próba dekapsulacji K1, K2...)
+    let mut checks_performed: u64 = 0;
+    // Suma czasu spędzonego tylko na operacjach kryptograficznych w pętlach
+    let mut total_check_duration = Duration::ZERO;
+
+    // --- KONIEC MODYFIKACJI ---
+
     // A = ⊙ _i (α_i. c_i)
     let A = usk
         .id
@@ -499,14 +578,58 @@ pub fn decaps(
         .map(|(marker, trap)| trap * marker)
         .sum();
 
-    match &encapsulation.encapsulations {
+    // --- POCZĄTEK MODYFIKACJI ---
+
+    // Wywołujemy podrzędne funkcje, przekazując im liczniki
+    let result = match &encapsulation.encapsulations {
         Encapsulations::HEncs(encs) => {
-            h_decaps(rng, usk, &A, &encapsulation.c, &encapsulation.tag, encs)
+            h_decaps(
+                rng,
+                usk,
+                &A,
+                &encapsulation.c,
+                &encapsulation.tag,
+                encs,
+                &mut checks_performed,
+                &mut total_check_duration, // Przekazujemy nowe argumenty
+            )
         }
         Encapsulations::CEncs(encs) => {
-            c_decaps(rng, usk, &A, &encapsulation.c, &encapsulation.tag, encs)
+            c_decaps(
+                rng,
+                usk,
+                &A,
+                &encapsulation.c,
+                &encapsulation.tag,
+                encs,
+                &mut checks_performed,
+                &mut total_check_duration, // Przekazujemy nowe argumenty
+            )
         }
+    };
+
+    // --- Finalne Raportowanie (po zakończeniu h_decaps lub c_decaps) ---
+    println!("\n--- [PROFILOWANIE DECAPS] ---");
+    if checks_performed > 0 {
+        // Obliczamy średni czas na podstawie sumy czasów wszystkich sprawdzeń
+        let avg_check_duration = total_check_duration / (checks_performed as u32);
+        
+        println!("Całkowita liczba wykonanych sprawdzeń: {}", checks_performed);
+        println!("Średni czas pojedynczego sprawdzenia: {:?}", avg_check_duration);
+        println!("Całkowity czas spędzony na sprawdzaniu: {:?}", total_check_duration);
+    } else {
+        println!("Nie wykonano żadnych sprawdzeń (np. brak kluczy).");
     }
+
+    // Raportujemy, jeśli nie znaleziono dopasowania
+    if result.as_ref().is_ok_and(|opt| opt.is_none()) && checks_performed > 0 {
+        println!("Wynik: Nie trafiono (wykonano {} sprawdzeń bez sukcesu).", checks_performed);
+    }
+    println!("--- [KONIEC PROFILOWANIA] ---\n");
+
+    result // Zwracamy oryginalny wynik
+    
+    // --- KONIEC MODYFIKACJI ---
 }
 
 /// Recover the encapsulated shared secret and set of rights used in the

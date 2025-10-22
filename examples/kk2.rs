@@ -61,7 +61,7 @@ fn populate_access_structure(
             None,
         )?;
     }
-
+    println!("  Access structure: {:?}", structure);
     Ok(())
 }
 
@@ -95,7 +95,7 @@ fn generate_unique_policy(
         }
     }
 
-    policy_attrs.join(" && ")
+    policy_attrs.join(" || ")
 }
 fn run_benchmark(
     cc: &Covercrypt,
@@ -125,9 +125,11 @@ fn run_benchmark(
         let ct = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::encrypt(cc, mpk, &ap, plaintext)
             .expect("Encryption failed");
         total_encrypt_time += start_encrypt.elapsed().as_nanos();
-        total_ciphertext_len += ct.1.len();
-        println!("  Ciphertext length: {:?}", ct.0.length());
-        println!("  Ciphertext: {}", ct.1.len());
+        total_ciphertext_len += ct.0.length();
+        //println!("  Ciphertext: {:?}", ct.0);
+        //println!("  Ciphertext length: {:?}", ct.0.length());
+
+        //println!("  Ciphertext: {}", ct.1.len());
         let start_decrypt = Instant::now();
         let decrypted = PkeAc::<{ Aes256Gcm::KEY_LENGTH }, Aes256Gcm>::decrypt(cc, &usk, &ct)
             .expect("Decryption failed");
@@ -176,7 +178,7 @@ fn main() {
 
         println!("Running benchmarks for mode: {}", hint_str);
 
-        for n in 1..=6 {
+        for n in 1..=4 {
             println!("Structure size: {} x {}", n, n);
             let available_attrs = generate_fixed_attributes(n, n);
             print_available_attrs(&available_attrs);
@@ -236,3 +238,10 @@ fn main() {
 
     println!("Benchmark complete. Results saved to benchmark_modes_comparison.csv.");
 }
+/*
+
+  Access structure: AccessStructure { version: V1, dimensions: {"DPT": Anarchy({"INT": Attribute { id: 7, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "FIN": Attribute { id: 4, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "MID": Attribute { id: 6, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "EXT": Attribute { id: 5, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "LVL": Anarchy({"MID": Attribute { id: 2, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "FIN": Attribute { id: 0, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "INT": Attribute { id: 3, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "EXT": Attribute { id: 1, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "SEC": Anarchy({"FIN": Attribute { id: 8, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "MID": Attribute { id: 10, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "EXT": Attribute { id: 9, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "INT": Attribute { id: 11, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "REG": Anarchy({"MID": Attribute { id: 14, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "INT": Attribute { id: 15, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "EXT": Attribute { id: 13, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "FIN": Attribute { id: 12, encryption_hint: Hybridized, write_status: EncryptDecrypt }})} }
+
+
+
+*/

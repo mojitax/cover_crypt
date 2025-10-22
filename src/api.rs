@@ -2,7 +2,7 @@ use std::sync::{Mutex, MutexGuard};
 
 use cosmian_crypto_core::{reexport::rand_core::SeedableRng, CsRng, Secret, SymmetricKey};
 use zeroize::Zeroizing;
-
+use std::time::Instant;
 use super::{
     core::primitives::{prune, update_msk, usk_keygen},
     core::MIN_TRACING_LEVEL,
@@ -213,16 +213,46 @@ impl<const KEY_LENGTH: usize, E: AE<KEY_LENGTH, Error = Error>> PkeAc<KEY_LENGTH
         E::encrypt(&mut *rng, &key, ptx).map(|ctx| (enc, ctx))
     }
 
+    // --- POCZĄTEK MODYFIKACJI ---
     fn decrypt(
         &self,
         usk: &Self::DecryptionKey,
         ctx: &Self::Ciphertext,
     ) -> Result<Option<Zeroizing<Vec<u8>>>, Self::Error> {
-        self.decaps(usk, &ctx.0)?
-            .map(|seed| {
+        
+        // 1. Pomiar czasu `decaps`
+        let decaps_start = Instant::now();
+        let maybe_seed = self.decaps(usk, &ctx.0)?;
+        let decaps_duration = decaps_start.elapsed();
+        println!("[PROFILOWANIE] Czas wykonania decaps: {:?}", decaps_duration);
+
+        // Używamy `match` zamiast `map().transpose()`, aby wstawić pomiary
+        match maybe_seed {
+            Some(seed) => {
+                // 2. Liczba seedów (w tym kontekście: 1, bo dekapsulacja się powiodła)
+
                 let key = SymmetricKey::derive(&seed, b"Covercrypt AE key")?;
-                E::decrypt(&key, &ctx.1)
-            })
-            .transpose()
+                
+                // 3. Pomiar czasu `E::decrypt` (szyfrowanie symetryczne)
+                let decrypt_start = Instant::now();
+                let plaintext_result = E::decrypt(&key, &ctx.1);
+                let decrypt_duration = decrypt_start.elapsed();
+                println!("[PROFILOWANIE] Czas wykonania E::decrypt (symetrycznego): {:?}", decrypt_duration);
+                
+                // Odtwarzamy logikę `transpose()`:
+                // Jeśli E::decrypt się udało (Ok), opakowujemy wynik w Ok(Some(...))
+                // Jeśli E::decrypt się nie udało (Err), propagujemy błąd
+                plaintext_result.map(Some)
+            }
+            None => {
+                // 2. Liczba seedów (w tym kontekście: 0)
+                println!("[PROFILOWANIE] Liczba wygenerowanych seedów: 0 (dekapsulacja nie powiodła się)");
+                
+                // Odtwarzamy logikę `transpose()`:
+                // Zwracamy Ok(None), informując, że deszyfrowanie nie jest możliwe
+                Ok(None)
+            }
+        }
     }
+    // --- KONIEC MODYFIKACJI ---
 }

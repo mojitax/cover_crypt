@@ -345,7 +345,7 @@ func rsaEncrypt(data []byte, pubKey *rsa.PublicKey) ([]byte, error) {
 
 // go test -benchmem -bench ^BenchmarkTKN20EndToEnd$ github.com/cloudflare/circl/abe/cpabe/tkn20
 func BenchmarkTKN20EndToEnd(b *testing.B) {
-	attributeCounts := []int{2, 3, 4, 5, 6}
+	attributeCounts := []int{1, 2, 3, 4, 5, 6}
 
 	csvFile, err := os.Create("tkn20_results.csv")
 	if err != nil {
@@ -377,7 +377,7 @@ func BenchmarkTKN20EndToEnd(b *testing.B) {
 			policyParts = append(policyParts, fmt.Sprintf("%s:%s", key, val))
 		}
 
-		policyStr := strings.Join(policyParts, " and ")
+		policyStr := strings.Join(policyParts, " or ")
 
 		// === Print policy and attributes ===
 		fmt.Printf("\n\n=== Benchmark for %d attributes ===\n", attrCount)
