@@ -1,0 +1,3108 @@
+Running benchmarks for mode: PostQuantum
+Structure size: 1 x 1
+Available attributes (1 total):
+   1: HREG::HFIN
+  Access structure: AccessStructure { version: V1, dimensions: {"HREG": Anarchy({"HFIN": Attribute { id: 0, encryption_hint: Hybridized, write_status: EncryptDecrypt }})} }
+  mpk length: 152
+  Policy length: 1
+  Selected policy: HREG::HFIN
+🔑 Czas generowania rights: 34.00 µs
+🔑 Czas generowania po coordinate: 7.00 µs
+🔑 Czas generowania po generate id: 100.00 µs
+🔑 Czas generowania po sign: 162.00 µs
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 2
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+Structure size: 2 x 2
+Available attributes (4 total):
+   1: HDPT::HINT
+   2: HDPT::HLOW
+   3: HSEC::HINT
+   4: HSEC::HLOW
+  Access structure: AccessStructure { version: V1, dimensions: {"HSEC": Anarchy({"HINT": Attribute { id: 2, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 3, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HDPT": Anarchy({"HLOW": Attribute { id: 1, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HINT": Attribute { id: 0, encryption_hint: Hybridized, write_status: EncryptDecrypt }})} }
+  mpk length: 2832
+  Policy length: 1
+  Selected policy: HSEC::HINT
+🔑 Czas generowania rights: 42.00 µs
+🔑 Czas generowania po coordinate: 35.00 µs
+🔑 Czas generowania po generate id: 134.00 µs
+🔑 Czas generowania po sign: 904.00 µs
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 6
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Policy length: 2
+  Selected policy: HSEC::HLOW || HDPT::HINT
+🔑 Czas generowania rights: 49.00 µs
+🔑 Czas generowania po coordinate: 34.00 µs
+🔑 Czas generowania po generate id: 116.00 µs
+🔑 Czas generowania po sign: 884.00 µs
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 8
+  Liczba enkapsulacji (CEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+Structure size: 3 x 3
+Available attributes (9 total):
+   1: HDPT::HEXT
+   2: HDPT::HLOW
+   3: HDPT::HHR
+   4: HREG::HEXT
+   5: HREG::HLOW
+   6: HREG::HHR
+   7: HSEC::HEXT
+   8: HSEC::HLOW
+   9: HSEC::HHR
+  Access structure: AccessStructure { version: V1, dimensions: {"HSEC": Anarchy({"HEXT": Attribute { id: 6, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 7, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HHR": Attribute { id: 8, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HREG": Anarchy({"HEXT": Attribute { id: 3, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HHR": Attribute { id: 5, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 4, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HDPT": Anarchy({"HHR": Attribute { id: 2, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HEXT": Attribute { id: 0, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 1, encryption_hint: Hybridized, write_status: EncryptDecrypt }})} }
+  mpk length: 44878
+  Policy length: 1
+  Selected policy: HREG::HLOW
+🔑 Czas generowania rights: 101.00 µs
+🔑 Czas generowania po coordinate: 336.00 µs
+🔑 Czas generowania po generate id: 444.00 µs
+🔑 Czas generowania po sign: 9943.00 µs
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 12
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 15
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 9
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 15
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 15
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 9
+  Liczba kluczy (Classic/Hybrid): 32
+  Liczba enkapsulacji (CEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Policy length: 2
+  Selected policy: HDPT::HLOW || HSEC::HHR
+🔑 Czas generowania rights: 131.00 µs
+🔑 Czas generowania po coordinate: 474.00 µs
+🔑 Czas generowania po generate id: 563.00 µs
+🔑 Czas generowania po sign: 14499.00 µs
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 10
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 12
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 36
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 8
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 34
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 15
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 36
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 12
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 10
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 10
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 34
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 10
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (typu Hybridized): 38
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Policy length: 3
+  Selected policy: HDPT::HHR || HREG::HHR || HSEC::HHR
+🔑 Czas generowania rights: 183.00 µs
+🔑 Czas generowania po coordinate: 580.00 µs
+🔑 Czas generowania po generate id: 668.00 µs
+🔑 Czas generowania po sign: 18170.00 µs
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 46
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 43
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 50
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 47
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 49
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 40
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 55
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 29
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 54
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 45
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 51
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 48
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 20
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 40
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 41
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 45
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 52
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 12
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 52
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 5
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 42
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 40
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 44
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 39
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 47
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 56
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 36
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 39
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 49
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 39
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 3
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 47
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 47
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 42
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 32
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 10
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 51
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 25
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 34
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 52
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 45
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 46
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 47
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 52
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (Classic/Hybrid): 56
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+Structure size: 4 x 4
+Available attributes (16 total):
+   1: HLVL::HINT
+   2: HLVL::HTOP
+   3: HLVL::HLOW
+   4: HLVL::HHR
+   5: HDPT::HINT
+   6: HDPT::HTOP
+   7: HDPT::HLOW
+   8: HDPT::HHR
+   9: HCONT::HINT
+  10: HCONT::HTOP
+  11: HCONT::HLOW
+  12: HCONT::HHR
+  13: HREG::HINT
+  14: HREG::HTOP
+  15: HREG::HLOW
+  16: HREG::HHR
+  Access structure: AccessStructure { version: V1, dimensions: {"HDPT": Anarchy({"HLOW": Attribute { id: 6, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HTOP": Attribute { id: 5, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HHR": Attribute { id: 7, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HINT": Attribute { id: 4, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HLVL": Anarchy({"HHR": Attribute { id: 3, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HTOP": Attribute { id: 1, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 2, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HINT": Attribute { id: 0, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HCONT": Anarchy({"HTOP": Attribute { id: 9, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 10, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HHR": Attribute { id: 11, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HINT": Attribute { id: 8, encryption_hint: Hybridized, write_status: EncryptDecrypt }}), "HREG": Anarchy({"HTOP": Attribute { id: 13, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HLOW": Attribute { id: 14, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HINT": Attribute { id: 12, encryption_hint: Hybridized, write_status: EncryptDecrypt }, "HHR": Attribute { id: 15, encryption_hint: Hybridized, write_status: EncryptDecrypt }})} }
+  mpk length: 515472
+  Policy length: 1
+  Selected policy: HREG::HLOW
+🔑 Czas generowania rights: 536.00 µs
+🔑 Czas generowania po coordinate: 3225.00 µs
+🔑 Czas generowania po generate id: 3322.00 µs
+🔑 Czas generowania po sign: 94439.00 µs
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 65
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 238
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 83
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 86
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 82
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 62
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 61
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 240
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 72
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 133
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 85
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 140
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 42
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 44
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 110
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 11
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 136
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 59
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 112
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 167
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 143
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 229
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 175
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 221
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 177
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 17
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 71
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 184
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 208
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 67
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 198
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 34
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 237
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 33
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 158
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 229
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 222
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 63
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 172
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 158
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 85
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 198
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 142
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 226
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 139
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 230
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 103
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 211
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 36
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 222
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 156
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 108
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 166
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 178
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 65
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 146
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 48
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 167
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 113
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 4
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 51
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 213
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 61
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 2
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 79
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 228
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 110
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 209
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 94
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 80
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 103
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 161
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 206
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 140
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 183
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 119
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 9
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 37
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 115
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 28
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 109
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 122
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 107
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 209
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 185
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 132
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 71
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 93
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 229
+  Liczba kluczy (typu Hybridized): 240
+  Liczba enkapsulacji (HEncs): 1
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Policy length: 2
+  Selected policy: HREG::HHR || HDPT::HHR
+🔑 Czas generowania rights: 785.00 µs
+🔑 Czas generowania po coordinate: 4734.00 µs
+🔑 Czas generowania po generate id: 4869.00 µs
+🔑 Czas generowania po sign: 141138.00 µs
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 225
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 283
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 108
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 240
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 341
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 357
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 309
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 144
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 368
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 366
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 95
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 222
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 267
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 340
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 357
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 217
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 266
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 288
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 194
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 296
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 229
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 293
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 330
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 104
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 321
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 280
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 217
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 108
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 359
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 40
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 338
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 247
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 361
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 268
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 307
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 140
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 295
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 183
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 159
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 316
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 325
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 196
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 383
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 293
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 137
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 112
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 298
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 132
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 6
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 83
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 154
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 108
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 297
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 226
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 1
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 360
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 156
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 187
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 88
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 266
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 299
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 92
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 194
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 258
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 45
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 286
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 15
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 48
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 364
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 146
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 117
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 310
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 312
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 177
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 224
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 218
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 46
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 232
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 156
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 211
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 272
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 79
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 296
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 140
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 58
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 168
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 55
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 107
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 75
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 352
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 158
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 181
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 364
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 27
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 201
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 46
+  Liczba kluczy (typu Hybridized): 390
+  Liczba enkapsulacji (HEncs): 2
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 240
+  Policy length: 3
+  Selected policy: HLVL::HINT || HDPT::HHR || HREG::HHR
+🔑 Czas generowania rights: 1270.00 µs
+🔑 Czas generowania po coordinate: 6157.00 µs
+🔑 Czas generowania po generate id: 6259.00 µs
+🔑 Czas generowania po sign: 196538.00 µs
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 268
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 348
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 177
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 170
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 454
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 53
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 98
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 119
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 284
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 232
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 323
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 135
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 184
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 287
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 264
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 463
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 252
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 104
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 332
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 436
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 98
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 105
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 55
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 409
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 405
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 175
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 459
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 141
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 139
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 178
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 86
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 216
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 483
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 93
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 413
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 7
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 177
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 289
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 356
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 148
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 368
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 123
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 117
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 303
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 313
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 16
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 181
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 140
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 267
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 443
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 216
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 116
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 374
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 385
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 269
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 424
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 224
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 321
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 401
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 358
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 346
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 294
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 120
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 23
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 478
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 381
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 34
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 246
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 469
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 153
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 151
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 14
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 320
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 98
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 245
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 366
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 221
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 91
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 72
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 403
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 42
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 153
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 266
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 116
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 286
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 122
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 320
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 368
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 445
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 411
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 458
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 396
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 301
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 56
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 270
+  Liczba kluczy (Classic/Hybrid): 490
+  Liczba enkapsulacji (CEncs): 3
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 85
+  Policy length: 4
+  Selected policy: HCONT::HLOW || HLVL::HHR || HREG::HHR || HDPT::HLOW
+🔑 Czas generowania rights: 1477.00 µs
+🔑 Czas generowania po coordinate: 7215.00 µs
+🔑 Czas generowania po generate id: 7323.00 µs
+🔑 Czas generowania po sign: 208722.00 µs
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 344
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 159
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 172
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 85
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 518
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 51
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 138
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 316
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 273
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 368
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 498
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 21
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 425
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 79
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 235
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 532
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 461
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 387
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 19
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 106
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 129
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 62
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 368
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 56
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 83
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 451
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 30
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 184
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 142
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 351
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 492
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 225
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 163
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 165
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 497
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 538
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 487
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 218
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 284
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 110
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 115
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 35
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 110
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 345
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 41
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 12
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 69
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 505
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 173
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 304
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 435
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 26
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 197
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 484
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 184
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 31
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 351
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 310
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 94
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 73
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 419
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 295
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 134
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 190
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 524
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 110
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 18
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 409
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 102
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 346
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 164
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 463
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 535
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 13
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 528
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 413
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 279
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 306
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 242
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 366
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 222
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 24
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 22
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 384
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 500
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 181
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 405
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 133
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 226
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 521
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 497
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 215
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 511
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 536
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 38
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 130
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 341
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 417
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 132
+  Liczba kluczy (Classic/Hybrid): 544
+  Liczba enkapsulacji (CEncs): 4
+[PROFILOWANIE] Trafiono przy sprawdzeniu nr: 380
+Benchmark complete. Results saved to benchmark_modes_comparison.csv.

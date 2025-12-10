@@ -1,4 +1,4 @@
-use std::{fs::File, io::Write, time::Instant, collections::HashSet, collections::HashMap};
+use std::{fs::File, io::{Write, BufRead, BufReader}, time::Instant, collections::HashSet, collections::HashMap};
 use std::mem::size_of_val;
 use cosmian_cover_crypt::{
     api::Covercrypt,
@@ -18,8 +18,8 @@ use cosmian_crypto_core::{
 };
 
 fn generate_fixed_attributes(attrs1_count: usize, attrs2_count: usize) -> Vec<String> {
-    let all_attrs1 = vec!["REG", "TYP", "LVL", "SEC", "DPT", "CONT"];
-    let all_attrs2 = vec!["TOP", "MID", "LOW", "INT", "EXT", "FIN", "HR"];
+    let all_attrs1 = vec!["HREG", "HTYP", "HLVL", "HSEC", "HDPT", "HCONT"];
+    let all_attrs2 = vec!["HTOP", "HMID", "HLOW", "HINT", "HEXT", "HFIN", "HHR"];
 
     let mut rng = thread_rng();
     let selected_attrs1: Vec<_> = all_attrs1.choose_multiple(&mut rng, attrs1_count).cloned().collect();
@@ -159,10 +159,119 @@ fn print_available_attrs(attrs: &[String]) {
         println!("  {:>2}: {}", i + 1, attr);
     }
 }
+fn analyze_decaps_stats(filename: &str, repetitions: usize) -> std::io::Result<()> {
+    let file = File::open(filename)?;
+    let reader = BufReader::new(file);
+    
+    let mut lines: Vec<String> = reader.lines()
+        .filter_map(|line| line.ok())
+        .collect();
+    
+    // Pomijamy nagłówek
+    if !lines.is_empty() {
+        lines.remove(0);
+    }
+    
+    if lines.is_empty() {
+        println!("\n⚠️  Brak danych w pliku {}", filename);
+        return Ok(());
+    }
+    
+    println!("\n═══════════════════════════════════════════════════════════");
+    println!("📊 ANALIZA STATYSTYK DEKAPSULACJI");
+    println!("═══════════════════════════════════════════════════════════");
+    println!("Liczba repetycji w grupie: {}", repetitions);
+    println!("Całkowita liczba pomiarów: {}", lines.len());
+    
+    // Grupujemy dane po `repetitions` wierszach
+    let groups = lines.chunks(repetitions);
+    let group_count = (lines.len() + repetitions - 1) / repetitions;
+    
+    let mut output_file = File::create("decaps_analysis.csv")?;
+    writeln!(
+        output_file,
+        "group_id,mode,avg_keys_checked,avg_checks_performed,avg_before_if_ns,avg_after_if_ns,avg_total_check_ns,avg_checks_before_if,avg_checks_after_if,avg_total_decaps_time_ns"
+    )?;
+    
+    for (group_id, group) in groups.enumerate() {
+        let mut mode = String::new();
+        let mut sum_keys_checked = 0u64;
+        let mut sum_checks_performed = 0u64;
+        let mut sum_before_if = 0.0;
+        let mut sum_after_if = 0.0;
+        let mut sum_total_check = 0.0;
+        let mut sum_checks_before_if = 0u64;
+        let mut sum_checks_after_if = 0u64;
+        let mut sum_total_decaps = 0.0;
+        let mut valid_count = 0;
+        
+        for line in group {
+            let parts: Vec<&str> = line.split(',').collect();
+            if parts.len() >= 9 {
+                mode = parts[0].trim().to_string();
+                sum_keys_checked += parts[1].trim().parse::<u64>().unwrap_or(0);
+                sum_checks_performed += parts[2].trim().parse::<u64>().unwrap_or(0);
+                sum_before_if += parts[3].trim().parse::<f64>().unwrap_or(0.0);
+                sum_after_if += parts[4].trim().parse::<f64>().unwrap_or(0.0);
+                sum_total_check += parts[5].trim().parse::<f64>().unwrap_or(0.0);
+                sum_checks_before_if += parts[6].trim().parse::<u64>().unwrap_or(0);
+                sum_checks_after_if += parts[7].trim().parse::<u64>().unwrap_or(0);
+                sum_total_decaps += parts[8].trim().parse::<f64>().unwrap_or(0.0);
+                valid_count += 1;
+            }
+        }
+        
+        if valid_count > 0 {
+            let avg_keys = sum_keys_checked as f64 / valid_count as f64;
+            let avg_checks = sum_checks_performed as f64 / valid_count as f64;
+            let avg_before = sum_before_if / valid_count as f64;
+            let avg_after = sum_after_if / valid_count as f64;
+            let avg_total = sum_total_check / valid_count as f64;
+            let avg_checks_before = sum_checks_before_if as f64 / valid_count as f64;
+            let avg_checks_after = sum_checks_after_if as f64 / valid_count as f64;
+            let avg_decaps = sum_total_decaps / valid_count as f64;
+            
+            println!("\n─────────────────────────────────────────────────────────");
+            println!("Grupa #{} (Mode: {})", group_id + 1, mode);
+            println!("─────────────────────────────────────────────────────────");
+            println!("  Średnia liczba sprawdzonych kluczy: {:.2}", avg_keys);
+            println!("  Średnia liczba wykonanych sprawdzeń: {:.2}", avg_checks);
+            println!("  Średni czas przed if: {:.2} ns", avg_before);
+            println!("  Średni czas po if: {:.2} ns", avg_after);
+            println!("  Średni czas całkowitego sprawdzenia: {:.2} ns", avg_total);
+            println!("  Średnia liczba sprawdzeń przed if: {:.2}", avg_checks_before);
+            println!("  Średnia liczba sprawdzeń po if: {:.2}", avg_checks_after);
+            println!("  ⏱️  ŚREDNI CAŁKOWITY CZAS DEKAPSULACJI: {:.2} ns ({:.2} µs)", 
+                     avg_decaps, avg_decaps / 1000.0);
+            
+            writeln!(
+                output_file,
+                "{},{},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2}",
+                group_id + 1,
+                mode,
+                avg_keys,
+                avg_checks,
+                avg_before,
+                avg_after,
+                avg_total,
+                avg_checks_before,
+                avg_checks_after,
+                avg_decaps
+            )?;
+        }
+    }
+    
+    println!("\n═══════════════════════════════════════════════════════════");
+    println!("✅ Analiza zapisana do pliku: decaps_analysis.csv");
+    println!("═══════════════════════════════════════════════════════════\n");
+    
+    Ok(())
+}
 fn main() {
-    let repetitions = 3;
+    let repetitions = 100;
     let plaintext = b"Benchmark test message";
-
+    let mut file1 = File::create("decaps_timing_stats.csv").expect("Cannot create file");
+    writeln!(file1, "mode,keys_checked,checks_performed,avg_before_if_ns,avg_after_if_ns,avg_total_ns,checks_before_if,checks_after_if, total_decaps_time").unwrap();
     let mut file = File::create("benchmark_modes_comparison3.csv").expect("Cannot create file");
     writeln!(
         file,
@@ -184,14 +293,16 @@ fn main() {
             print_available_attrs(&available_attrs);
             let cc = Covercrypt::default();
 
-            
-            let (mut msk, mut mpk) = cc_keygen(&cc, false).unwrap();
+            let (mut msk, _) = cc.setup().expect("Setup failed");
 
+            // Zastąp pustą access_structure własną
             msk.access_structure = AccessStructure::new();
             populate_access_structure(&mut msk.access_structure, hint.clone(), &available_attrs)
                 .expect("Populating access structure failed");
+
             let start_keygen = Instant::now();
-            mpk = cc.update_msk(&mut msk).expect("Updating MPK failed");
+            // Zaktualizuj MPK na podstawie nowej struktury
+            let mpk = cc.update_msk(&mut msk).expect("Updating MPK failed");
             println!("  mpk length: {}", mpk.length());
             let keygen_time = start_keygen.elapsed().as_micros() as f64;
             for policy_len in 1..=n {
@@ -237,6 +348,8 @@ fn main() {
     }
 
     println!("Benchmark complete. Results saved to benchmark_modes_comparison.csv.");
+    if let Err(e) = analyze_decaps_stats("decaps_timing_stats.csv", repetitions) {
+        eprintln!("❌ Błąd podczas analizy statystyk: {}", e);}
 }
 /*
 

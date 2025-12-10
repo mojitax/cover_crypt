@@ -3,6 +3,8 @@ use std::{
     mem::take,
 };
 
+use std::sync::{Mutex, MutexGuard};
+use std::{fs::OpenOptions, io::Write};
  use std::time::{Duration, Instant};
 use cosmian_crypto_core::{
     bytes_ser_de::Serializable,
@@ -27,6 +29,62 @@ use crate::{
 };
 
 use super::nike::ElGamal;
+#[derive(Default)]
+struct DecapsStats {
+    keys_checked: u64,
+    checks_performed: u64,
+    total_check_duration: Duration,
+    // Nowe pola
+    time_before_if: Duration,
+    time_after_if: Duration,
+    checks_before_if: u64,
+    checks_after_if: u64,
+    total_decaps_duration: Duration,  // Całkowity czas dekapsulacji
+}
+
+impl DecapsStats {
+    fn save_to_file(&self, mode: &str, filename: &str) -> std::io::Result<()> {
+        let mut file = OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open(filename)?;
+
+        let avg_before_if = if self.checks_before_if > 0 {
+            self.time_before_if.as_nanos() as f64 / self.checks_before_if as f64
+        } else {
+            0.0
+        };
+
+        let avg_after_if = if self.checks_after_if > 0 {
+            self.time_after_if.as_nanos() as f64 / self.checks_after_if as f64
+        } else {
+            0.0
+        };
+
+        let avg_total = if self.checks_performed > 0 {
+            self.total_check_duration.as_nanos() as f64 / self.checks_performed as f64
+        } else {
+            0.0
+        };
+
+        writeln!(
+            file,
+            "{},{},{},{:.2},{:.2},{:.2},{},{},{:.2}",
+            mode,
+            self.keys_checked,
+            self.checks_performed,
+            avg_before_if,
+            avg_after_if,
+            avg_total,
+            self.checks_before_if,
+            self.checks_after_if,
+            self.total_decaps_duration.as_nanos() as f64
+        )?;
+
+        Ok(())
+    }
+}
+
 
 fn xor_2<const LENGTH: usize>(lhs: &[u8; LENGTH], rhs: &[u8; LENGTH]) -> [u8; LENGTH] {
     let mut out = [0; LENGTH];
@@ -362,10 +420,7 @@ fn h_decaps(
         <kem::MlKem as Kem>::Encapsulation,
         [u8; SHARED_SECRET_LENGTH],
     )],
-    // --- POCZĄTEK MODYFIKACJI (1/3): Dodane argumenty ---
-    checks_performed: &mut u64,
-    total_check_duration: &mut Duration,
-    // --- KONIEC MODYFIKACJI (1/3) ---
+    stats: &mut DecapsStats,
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
     let T = {
         let mut hasher = Sha3::v256();
@@ -390,12 +445,8 @@ fn h_decaps(
         U
     };
 
-    // --- POCZĄTEK MODYFIKACJI (2/3): Obliczenie i raportowanie statystyk ---
-    
-    // 1. Liczba enkapsulacji
+    // Liczenie kluczy
     let total_encapsulations = encs.len() as u64;
-
-    // 2. Liczba kluczy (precyzyjnie: tylko kluczy Hybridized)
     let mut total_keys = 0;
     for revision in usk.secrets.revisions() {
         for (_, secret) in &revision {
@@ -404,14 +455,10 @@ fn h_decaps(
             }
         }
     }
-    let total_possible_checks = total_keys * total_encapsulations;
+    stats.keys_checked = total_keys;
 
-    println!("[PROFILOWANIE] h_decaps start:");
     println!("  Liczba kluczy (typu Hybridized): {}", total_keys);
     println!("  Liczba enkapsulacji (HEncs): {}", total_encapsulations);
-    println!("  Maksymalna liczba możliwych sprawdzeń: {}", total_possible_checks);
-    
-    // --- KONIEC MODYFIKACJI (2/3) ---
 
     let mut encs = encs.iter().collect::<Vec<_>>();
     shuffle(&mut encs, rng);
@@ -421,36 +468,46 @@ fn h_decaps(
         for (E, F) in &encs {
             for (_, secret) in &revision {
                 if let RightSecretKey::Hybridized { sk, dk } = secret {
-                    
-                    // --- POCZĄTEK MODYFIKACJI (3/3): Pomiar pojedynczego sprawdzenia ---
-                    let check_start = Instant::now(); // Start pomiaru
-                    *checks_performed += 1; // Inkrementacja licznika sprawdzeń
-                    // ---
+                    let check_start = Instant::now();
+                    stats.checks_performed += 1;
 
                     let mut K1 = ElGamal::session_key(sk, A)?;
                     let K2 = MlKem::dec(dk, E)?;
                     let S_ij = xor_in_place(H_hash(&K1, Some(&K2), &T)?, F);
                     let (tag_ij, ss) = J_hash(&S_ij, &U);
                     
+                    // Pomiar PRZED if
+                    let time_before = check_start.elapsed();
+                    stats.time_before_if += time_before;
+                    stats.checks_before_if += 1;
+                    
                     if tag == &tag_ij {
-                        // ...
+                        let if_start = Instant::now();
+                        
                         let r = G_hash(&S_ij)?;
                         let c_ij = usk.set_traps(&r);
+                        
                         if c == c_ij {
                             K1.zeroize();
                             
-                            // --- Zatrzymujemy stoper i raportujemy sukces ---
-                            *total_check_duration += check_start.elapsed();
-                            println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", *checks_performed);
-                            // ---
+                            // Pomiar WEWNĄTRZ if (po spełnieniu warunku)
+                            let time_after = if_start.elapsed();
+                            stats.time_after_if += time_after;
+                            stats.checks_after_if += 1;
                             
+                            stats.total_check_duration += check_start.elapsed();
+                            
+                            println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", stats.checks_performed);
                             return Ok(Some(ss));
                         }
+                        
+                        // Pomiar dla if który się nie powiódł (c != c_ij)
+                        let time_after = if_start.elapsed();
+                        stats.time_after_if += time_after;
+                        stats.checks_after_if += 1;
                     }
                     
-                    // --- Jeśli nie było `return`, dodajemy czas do sumy ---
-                    *total_check_duration += check_start.elapsed();
-                    // --- KONIEC MODYFIKACJI (3/3) ---
+                    stats.total_check_duration += check_start.elapsed();
                 }
             }
         }
@@ -467,10 +524,7 @@ fn c_decaps(
     c: &[<ElGamal as Nike>::PublicKey],
     tag: &[u8; TAG_LENGTH],
     encs: &Vec<[u8; SHARED_SECRET_LENGTH]>,
-    // --- POCZĄTEK MODYFIKACJI (1/3): Dodane argumenty ---
-    checks_performed: &mut u64,
-    total_check_duration: &mut Duration,
-    // --- KONIEC MODYFIKACJI (1/3) ---
+    stats: &mut DecapsStats,
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
     let T = {
         let mut hasher = Sha3::v256();
@@ -491,21 +545,13 @@ fn c_decaps(
         U
     };
 
-    // --- POCZĄTEK MODYFIKACJI (2/3): Obliczenie i raportowanie statystyk ---
-    
-    // 1. Liczba enkapsulacji
+    // Liczenie kluczy
     let total_encapsulations = encs.len() as u64;
-
-    // 2. Liczba kluczy (tutaj liczymy wszystkie, bo każdy ma `sk`)
     let total_keys = usk.secrets.revisions().map(|rev| rev.len() as u64).sum::<u64>();
-    let total_possible_checks = total_keys * total_encapsulations;
+    stats.keys_checked = total_keys;
 
-    println!("[PROFILOWANIE] c_decaps start:");
     println!("  Liczba kluczy (Classic/Hybrid): {}", total_keys);
     println!("  Liczba enkapsulacji (CEncs): {}", total_encapsulations);
-    println!("  Maksymalna liczba możliwych sprawdzeń: {}", total_possible_checks);
-    
-    // --- KONIEC MODYFIKACJI (2/3) ---
 
     let mut encs = encs.iter().collect::<Vec<_>>();
     shuffle(&mut encs, rng);
@@ -519,34 +565,44 @@ fn c_decaps(
                     RightSecretKey::Classic { sk } => sk,
                 };
                 
-                // --- POCZĄTEK MODYFIKACJI (3/3): Pomiar pojedynczego sprawdzenia ---
-                let check_start = Instant::now(); // Start pomiaru
-                *checks_performed += 1; // Inkrementacja licznika sprawdzeń
-                // ---
+                let check_start = Instant::now();
+                stats.checks_performed += 1;
 
                 let mut K1 = ElGamal::session_key(sk, A)?;
                 let S = xor_in_place(H_hash(&K1, None, &T)?, F);
                 K1.zeroize();
                 let (tag_ij, ss) = J_hash(&S, &U);
                 
+                // Pomiar PRZED if
+                let time_before = check_start.elapsed();
+                stats.time_before_if += time_before;
+                stats.checks_before_if += 1;
+                
                 if tag == &tag_ij {
-                    // ...
+                    let if_start = Instant::now();
+                    
                     let r = G_hash(&S)?;
                     let c_ij = usk.set_traps(&r);
+                    
                     if c == c_ij {
+                        // Pomiar WEWNĄTRZ if (po spełnieniu warunku)
+                        let time_after = if_start.elapsed();
+                        stats.time_after_if += time_after;
+                        stats.checks_after_if += 1;
                         
-                        // --- Zatrzymujemy stoper i raportujemy sukces ---
-                        *total_check_duration += check_start.elapsed();
-                        println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", *checks_performed);
-                        // ---
+                        stats.total_check_duration += check_start.elapsed();
                         
+                        println!("[PROFILOWANIE] Trafiono przy sprawdzeniu nr: {}", stats.checks_performed);
                         return Ok(Some(ss));
                     }
+                    
+                    // Pomiar dla if który się nie powiódł
+                    let time_after = if_start.elapsed();
+                    stats.time_after_if += time_after;
+                    stats.checks_after_if += 1;
                 }
                 
-                // --- Jeśli nie było `return`, dodajemy czas do sumy ---
-                *total_check_duration += check_start.elapsed();
-                // --- KONIEC MODYFIKACJI (3/3) ---
+                stats.total_check_duration += check_start.elapsed();
             }
         }
     }
@@ -554,23 +610,15 @@ fn c_decaps(
     Ok(None)
 }
 
-/// Attempts opening the Covercrypt encapsulation using the given USK. Returns
-/// the encapsulated key upon success, otherwise returns `None`.
+/// Attempts opening the Covercrypt encapsulation using the given USK.
 pub fn decaps(
     rng: &mut impl CryptoRngCore,
     usk: &UserSecretKey,
     encapsulation: &XEnc,
 ) -> Result<Option<Secret<SHARED_SECRET_LENGTH>>, Error> {
-    // --- POCZĄTEK MODYFIKACJI ---
-    
-    // Licznik wykonanych sprawdzeń (próba dekapsulacji K1, K2...)
-    let mut checks_performed: u64 = 0;
-    // Suma czasu spędzonego tylko na operacjach kryptograficznych w pętlach
-    let mut total_check_duration = Duration::ZERO;
+    let decaps_start = Instant::now();  // Start pomiaru całkowitego czasu dekapsulacji
+    let mut stats = DecapsStats::default();
 
-    // --- KONIEC MODYFIKACJI ---
-
-    // A = ⊙ _i (α_i. c_i)
     let A = usk
         .id
         .iter()
@@ -578,9 +626,6 @@ pub fn decaps(
         .map(|(marker, trap)| trap * marker)
         .sum();
 
-    // --- POCZĄTEK MODYFIKACJI ---
-
-    // Wywołujemy podrzędne funkcje, przekazując im liczniki
     let result = match &encapsulation.encapsulations {
         Encapsulations::HEncs(encs) => {
             h_decaps(
@@ -590,8 +635,7 @@ pub fn decaps(
                 &encapsulation.c,
                 &encapsulation.tag,
                 encs,
-                &mut checks_performed,
-                &mut total_check_duration, // Przekazujemy nowe argumenty
+                &mut stats,
             )
         }
         Encapsulations::CEncs(encs) => {
@@ -602,34 +646,43 @@ pub fn decaps(
                 &encapsulation.c,
                 &encapsulation.tag,
                 encs,
-                &mut checks_performed,
-                &mut total_check_duration, // Przekazujemy nowe argumenty
+                &mut stats,
             )
         }
     };
 
-    // --- Finalne Raportowanie (po zakończeniu h_decaps lub c_decaps) ---
-    println!("\n--- [PROFILOWANIE DECAPS] ---");
-    if checks_performed > 0 {
-        // Obliczamy średni czas na podstawie sumy czasów wszystkich sprawdzeń
-        let avg_check_duration = total_check_duration / (checks_performed as u32);
+    stats.total_decaps_duration = decaps_start.elapsed();  // Koniec pomiaru całkowitego czasu
+
+    // Raportowanie
+    if stats.checks_performed > 0 {
+        let avg_check_duration = stats.total_check_duration / (stats.checks_performed as u32);
+        let avg_before_if = stats.time_before_if / (stats.checks_before_if as u32);
+        let avg_after_if = if stats.checks_after_if > 0 {
+            stats.time_after_if / (stats.checks_after_if as u32)
+        } else {
+            Duration::ZERO
+        };
         
-        println!("Całkowita liczba wykonanych sprawdzeń: {}", checks_performed);
-        println!("Średni czas pojedynczego sprawdzenia: {:?}", avg_check_duration);
-        println!("Całkowity czas spędzony na sprawdzaniu: {:?}", total_check_duration);
-    } else {
-        println!("Nie wykonano żadnych sprawdzeń (np. brak kluczy).");
+        println!("Całkowita liczba wykonanych sprawdzeń: {}", stats.checks_performed);
+        println!("Średni czas przed if: {:?}", avg_before_if);
+        println!("Średni czas po if (tylko gdy tag==tag_ij): {:?}", avg_after_if);
+        println!("Liczba sprawdzeń które przeszły przez if: {}", stats.checks_after_if);
+        println!("Średni czas pojedynczego sprawdzenia (całość): {:?}", avg_check_duration);
+        println!("Całkowity czas spędzony na sprawdzaniu: {:?}", stats.total_check_duration);
+        println!("CAŁKOWITY CZAS DEKAPSULACJI: {:?}", stats.total_decaps_duration);
+
+        // Zapisz do pliku
+        let mode = match &encapsulation.encapsulations {
+            Encapsulations::HEncs(_) => "Hybridized",
+            Encapsulations::CEncs(_) => "Classic",
+        };
+        
+        if let Err(e) = stats.save_to_file(mode, "decaps_timing_stats.csv") {
+            eprintln!("Błąd zapisu statystyk do pliku: {}", e);
+        }
     }
 
-    // Raportujemy, jeśli nie znaleziono dopasowania
-    if result.as_ref().is_ok_and(|opt| opt.is_none()) && checks_performed > 0 {
-        println!("Wynik: Nie trafiono (wykonano {} sprawdzeń bez sukcesu).", checks_performed);
-    }
-    println!("--- [KONIEC PROFILOWANIA] ---\n");
-
-    result // Zwracamy oryginalny wynik
-    
-    // --- KONIEC MODYFIKACJI ---
+    result
 }
 
 /// Recover the encapsulated shared secret and set of rights used in the

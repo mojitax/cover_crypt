@@ -430,6 +430,7 @@ impl MasterPublicKey {
                     .encryption_keys
                     .get(r)
                     .ok_or_else(|| Error::KeyError(format!("no public key for right '{r:#?}'")))?;
+                //println!("  Selected subkey for right {:?}: {:?}", r, subkey);
                 if !subkey.is_hybridized() {
                     is_hybridized = false;
                 }
